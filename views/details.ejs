@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            background-color:orangered;   /*202124;*/
+        }
+
+        form{
+            width: 60vw;
+            margin-top: 15% ;
+            margin-right: 12%;
+            display: grid;
+            grid-template-columns: 0.3fr 1fr ;
+            grid-template-rows: 1.5fr 1.5fr 1.5fr 11fr;
+            gap: 30px;
+
+        }
+        
+        form>input{
+            border: 2px solid #202124;
+        }
+
+        form>label{
+            justify-self: end;
+        }
+
+        #noteLabel{
+            align-self: center;
+        }
+
+        #sub{
+            grid-column: 2 / 3 ;
+            justify-self: center ;
+            width: 150px;
+            height: 40px;
+            border-radius: 8px;
+            background-color: #202124;
+            color: gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit" method="POST">
+        <label for="bookName">Title:</label>
+        <input id="bookName" type="text" name="bookName" required/>
+        <label for="isbn">ISBN:</label>
+        <input id="isbn" type="text" name="isbn" required/>
+        <label for="authorName">Author:</label>
+        <input id="authorName" type="text" name="authorName" required/>
+        <label for="bookNotes" id="noteLabel">Notes:</label>
+        <textarea id="bookNotes" type="text"  name="bookNotes"> </textarea>
+        <input id="sub" type="submit"/>
+    </form>
+</body>
+</html>

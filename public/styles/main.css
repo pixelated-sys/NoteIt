@@ -1,0 +1,103 @@
+body{
+    background-color:gainsboro;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    width: 100vw ;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+}
+
+.nav-view{
+    display: flex;
+    width:80vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orangered;
+}
+
+nav>h1{
+    margin-left: 10%;
+}
+
+
+
+#searchForm{
+    display: flex;
+    width: 0%;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+
+#inputField{
+    border-radius: 7px;
+    height: 20px;
+    background-color: whitesmoke;
+}
+
+
+.listPane{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 100vh;
+    justify-content: flex-start;
+    gap: 50px;
+    align-items: center;
+    background-color:gainsboro;
+    margin-left:auto;
+    margin-right: auto;
+    gap: 10px;
+}
+
+
+.cover>img{
+    border: 5px solid whitesmoke;
+}
+
+
+.note{
+    width:50%;
+    align-self: flex-start;
+}
+
+.container{
+    display: flex;
+    padding: 25px 10px 25px 10px ;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #202124;
+    color: whitesmoke;
+    height: 500px;
+    width: 70%;
+    max-height: 300px;
+}
+
+.options{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center ;
+}
+
+
+.delete,.create,.search,.done{
+    background-color: transparent;
+    border: none;
+}
+
+.delete>svg>g:hover{
+    fill: rgb(197, 73, 73);
+}
+
+
+
